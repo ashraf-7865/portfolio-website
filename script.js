@@ -1,8 +1,22 @@
-const cursor = document.querySelector(".cursor");
+const cursorDot = document.querySelector(".cursor-dot");
+const cursorOutline = document.querySelector(".cursor-outline");
 
-document.addEventListener("mousemove", (e) => {
-    cursor.style.left = e.clientX + "px";
-    cursor.style.top = e.clientY + "px";
+window.addEventListener("mousemove", function(e){
+
+    const posX = e.clientX;
+    const posY = e.clientY;
+
+    cursorDot.style.left = `${posX}px`;
+    cursorDot.style.top = `${posY}px`;
+
+    cursorOutline.animate({
+        left: `${posX}px`,
+        top: `${posY}px`
+    }, {
+        duration: 150,
+        fill: "forwards"
+    });
+
 });
 
 const texts = [
@@ -29,9 +43,12 @@ let letter = "";
     document.querySelector(".typing").textContent = letter;
 
     if(letter.length === currentText.length){
+
         count++;
         index = 0;
+
         setTimeout(type,1500);
+
     }
     else{
         setTimeout(type,100);
@@ -58,3 +75,12 @@ function reveal(){
     }
 
 }
+
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+menuToggle.addEventListener("click", () => {
+
+    navLinks.classList.toggle("active");
+
+});

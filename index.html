@@ -2,21 +2,23 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ashraf | AI Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css">
+    <title>Ashraf | Portfolio</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css" />
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body>
 
-    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
 
     <header>
 
@@ -24,12 +26,18 @@
 
             <h2 class="logo">Ashraf</h2>
 
-            <ul class="nav-links">
+            <div class="menu-toggle" id="menu-toggle">
+                ☰
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+
             </ul>
 
         </nav>
@@ -50,8 +58,9 @@
                 <h3 class="typing"></h3>
 
                 <p>
-                    Passionate about Artificial Intelligence,
-                    Data Science, and futuristic web experiences.
+                    AI & Data Science student passionate about
+                    Machine Learning, AI applications,
+                    and futuristic web experiences.
                 </p>
 
                 <div class="buttons">
@@ -77,7 +86,9 @@
             </div>
 
             <div class="hero-image">
+
                 <img src="assets/profile.jpg" alt="Ashraf">
+
             </div>
 
         </div>
@@ -89,8 +100,12 @@
         <h2>About Me</h2>
 
         <p class="about-text">
-            I am a 3rd-year B.Tech student in Artificial Intelligence & Data Science at KL University.
-            I enjoy building AI applications, responsive websites, and learning futuristic technologies.
+
+            I am a 3rd-year B.Tech student in Artificial Intelligence & Data Science at KL University
+            with a CGPA of 8.9.
+            I enjoy building AI applications, modern responsive websites,
+            and exploring futuristic technologies.
+
         </p>
 
     </section>
@@ -142,8 +157,8 @@
                 <h3>Expense Sharing App</h3>
 
                 <p>
-                    Smart expense-sharing application for tracking
-                    and splitting expenses.
+                    Smart expense-sharing app for tracking and
+                    splitting expenses efficiently.
                 </p>
 
                 <a href="#" class="project-btn">
@@ -158,22 +173,29 @@
 
     <section id="contact" class="section reveal">
 
-        <h2>Contact</h2>
+        <h2>Get In Touch</h2>
 
-        <p>Email: ashrafskmd8@gmail.com</p>
+        <div class="contact-container">
 
-        <p>Location: Guntur, Andhra Pradesh</p>
+            <p>Email: ashrafskmd8@gmail.com</p>
 
-        <div class="contact-links">
+            <p>Phone: 7989472314</p>
 
-            <a href="https://github.com/ashraf-7865" target="_blank">
-                GitHub
-            </a>
+            <p>Location: Guntur, Andhra Pradesh</p>
 
-            <a href="https://linkedin.com/in/mohammad-ashraf-shaik-36840a38b"
-                target="_blank">
-                LinkedIn
-            </a>
+            <div class="contact-links">
+
+                <a href="https://github.com/ashraf-7865"
+                    target="_blank">
+                    GitHub
+                </a>
+
+                <a href="https://linkedin.com/in/mohammad-ashraf-shaik-36840a38b"
+                    target="_blank">
+                    LinkedIn
+                </a>
+
+            </div>
 
         </div>
 
@@ -181,7 +203,9 @@
 
     <footer>
 
-        <p>© 2026 Shaik Mohammad Ashraf</p>
+        <p>
+            © 2026 Shaik Mohammad Ashraf
+        </p>
 
     </footer>
 
