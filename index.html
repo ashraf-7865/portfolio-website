@@ -1,216 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Ashraf | Portfolio</title>
-
+    <title>Mohammad Ashraf | AI & Data Science Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
-
 <body>
+    <!-- Custom Cursor -->
+    <div class="cursor-container">
+        <div class="cursor-dot"></div>
+        <div class="cursor-outline"></div>
+    </div>
 
-    <div class="cursor-dot"></div>
-    <div class="cursor-outline"></div>
+    <!-- Animated Background Blobs -->
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
 
-    <header>
-
-        <nav>
-
-            <h2 class="logo">Ashraf</h2>
-
-            <div class="menu-toggle" id="menu-toggle">
-                ☰
+    <!-- Navigation -->
+    <header class="navbar">
+        <nav class="nav-container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-text">Ashraf</span>
+                    <span class="logo-glow"></span>
+                </div>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-
             <ul class="nav-links" id="nav-links">
-
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-
         </nav>
-
     </header>
 
+    <!-- Hero Section -->
     <section id="home" class="hero">
-
-        <div class="hero-content">
-
-            <div class="hero-text">
-
-                <h1>
-                    Hi, I'm
-                    <span>Mohammad Ashraf</span>
-                </h1>
-
-                <h3 class="typing"></h3>
-
-                <p>
-                    AI & Data Science student passionate about
-                    Machine Learning, AI applications,
-                    and futuristic web experiences.
-                </p>
-
-                <div class="buttons">
-
-                    <a href="#projects" class="btn">
-                        View Projects
-                    </a>
-
-                    <a href="https://github.com/ashraf-7865"
-                        target="_blank"
-                        class="btn secondary">
-                        GitHub
-                    </a>
-
-                    <a href="https://linkedin.com/in/mohammad-ashraf-shaik-36840a38b"
-                        target="_blank"
-                        class="btn secondary">
-                        LinkedIn
-                    </a>
-
+        <div class="hero-background">
+            <div class="glow-orb glow-orb-1"></div>
+            <div class="glow-orb glow-orb-2"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-greeting">Welcome to my portfolio</div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Mohammad Ashraf</span>
+                    </h1>
+                    <div class="typing-container">
+                        <h2 class="typing-text"></h2>
+                        <span class="cursor-blink">|</span>
+                    </div>
+                    <p class="hero-description">
+                        AI & Data Science student passionate about Machine Learning, AI applications, and creating futuristic web experiences. Exploring the intersection of technology and innovation.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View Projects</span>
+                            <span class="btn-glow"></span>
+                        </a>
+                        <a href="https://github.com/ashraf-7865" target="_blank" class="btn btn-secondary">
+                            <span>GitHub</span>
+                            <span class="btn-glow"></span>
+                        </a>
+                        <a href="https://linkedin.com/in/mohammad-ashraf-shaik-36840a38b" target="_blank" class="btn btn-secondary">
+                            <span>LinkedIn</span>
+                            <span class="btn-glow"></span>
+                        </a>
+                    </div>
                 </div>
-
+                <div class="hero-image-container">
+                    <div class="image-frame">
+                        <img src="assets/profile.jpg" alt="Mohammad Ashraf" class="profile-image" />
+                        <div class="image-glow"></div>
+                        <div class="image-border"></div>
+                    </div>
+                </div>
             </div>
-
-            <div class="hero-image">
-
-                <img src="assets/profile.jpg" alt="Ashraf">
-
-            </div>
-
         </div>
-
     </section>
 
-    <section id="about" class="section reveal">
-
-        <h2>About Me</h2>
-
-        <p class="about-text">
-
-            I am a 3rd-year B.Tech student in Artificial Intelligence & Data Science at KL University
-            with a CGPA of 8.9.
-            I enjoy building AI applications, modern responsive websites,
-            and exploring futuristic technologies.
-
-        </p>
-
-    </section>
-
-    <section id="skills" class="section reveal">
-
-        <h2>Skills</h2>
-
-        <div class="skills-container">
-
-            <div class="skill-card">C</div>
-            <div class="skill-card">Java</div>
-            <div class="skill-card">Python</div>
-            <div class="skill-card">HTML</div>
-            <div class="skill-card">CSS</div>
-            <div class="skill-card">JavaScript</div>
-            <div class="skill-card">React.js</div>
-            <div class="skill-card">Node.js</div>
-            <div class="skill-card">TensorFlow</div>
-            <div class="skill-card">Machine Learning</div>
-
-        </div>
-
-    </section>
-
-    <section id="projects" class="section reveal">
-
-        <h2>Projects</h2>
-
-        <div class="projects-container">
-
-            <div class="project-card">
-
-                <h3>Face Recognition System</h3>
-
-                <p>
-                    CNN-based face recognition system using Python,
-                    TensorFlow, OpenCV, and NumPy.
-                </p>
-
-                <a href="#" class="project-btn">
-                    View Project
-                </a>
-
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="section-container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-card glass-card">
+                <div class="about-content">
+                    <p class="about-text">
+                        I'm a 3rd-year B.Tech student in Artificial Intelligence & Data Science at KL University with a CGPA of 8.9. I'm passionate about leveraging cutting-edge technologies to solve real-world problems.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Education</span>
+                            <span class="detail-value">B.Tech in AI & Data Science</span>
+                            <span class="detail-subtitle">KL University</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">CGPA</span>
+                            <span class="detail-value">8.9</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Location</span>
+                            <span class="detail-value">Guntur, Andhra Pradesh</span>
+                        </div>
+                    </div>
+                    <p class="about-text-secondary">
+                        I love building AI applications, crafting modern responsive websites, and exploring the frontiers of futuristic technology. Always eager to learn and contribute to innovative projects.
+                    </p>
+                </div>
+                <div class="about-decoration"></div>
             </div>
-
-            <div class="project-card">
-
-                <h3>Expense Sharing App</h3>
-
-                <p>
-                    Smart expense-sharing app for tracking and
-                    splitting expenses efficiently.
-                </p>
-
-                <a href="#" class="project-btn">
-                    View Project
-                </a>
-
-            </div>
-
         </div>
-
     </section>
 
-    <section id="contact" class="section reveal">
-
-        <h2>Get In Touch</h2>
-
-        <div class="contact-container">
-
-            <p>Email: ashrafskmd8@gmail.com</p>
-
-            <p>Phone: 7989472314</p>
-
-            <p>Location: Guntur, Andhra Pradesh</p>
-
-            <div class="contact-links">
-
-                <a href="https://github.com/ashraf-7865"
-                    target="_blank">
-                    GitHub
-                </a>
-
-                <a href="https://linkedin.com/in/mohammad-ashraf-shaik-36840a38b"
-                    target="_blank">
-                    LinkedIn
-                </a>
-
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="section-container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">💻</div>
+                    <div class="skill-name">C</div>
+                    <div class="skill-glow"></div>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">☕</div>
+                    <div class="skill-name">Java</div>
+                    <div class="skill-glow"></div>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">🐍</div>
+                    <div class="skill-name">Python</div>
+                    <div class="skill-glow"></div>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">🌐</div>
+                    <div class="skill-name">HTML</div>
+                    <div class="skill-glow"></div>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">🎨</div>
+                    <div class="skill-name">CSS</div>
+                    <div class="skill-glow"></div>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">⚡</div>
+                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-glow"></div>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">⚛️</div>
+                    <div class="skill-name">React.js</div>
+                    <div class="skill-glow"></div>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">🚀</div>
+                    <div class="skill-name">Node.js</div>
+                    <div class="skill-glow"></div>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">🤖</div>
+                    <div class="skill-name">TensorFlow</div>
+                    <div class="skill-glow"></div>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">🧠</div>
+                    <div class="skill-name">Machine Learning</div>
+                    <div class="skill-glow"></div>
+                </div>
             </div>
-
         </div>
-
     </section>
 
-    <footer>
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="section-container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card glass-card">
+                    <div class="project-image-placeholder">
+                        <div class="placeholder-icon">👤</div>
+                        <div class="placeholder-glow"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Face Recognition System</h3>
+                        <p class="project-description">
+                            CNN-based face recognition system using Python, TensorFlow, OpenCV, and NumPy for accurate facial detection and recognition.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">OpenCV</span>
+                        </div>
+                        <a href="#" class="project-link">
+                            View Project <span class="arrow">→</span>
+                        </a>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+                <div class="project-card glass-card">
+                    <div class="project-image-placeholder">
+                        <div class="placeholder-icon">💰</div>
+                        <div class="placeholder-glow"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Expense Sharing App</h3>
+                        <p class="project-description">
+                            Smart expense-sharing application for tracking and splitting expenses efficiently among friends and groups.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Web App</span>
+                            <span class="tech-tag">UI/UX</span>
+                        </div>
+                        <a href="#" class="project-link">
+                            View Project <span class="arrow">→</span>
+                        </a>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <p>
-            © 2026 Shaik Mohammad Ashraf
-        </p>
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="section-container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-card glass-card">
+                <div class="contact-content">
+                    <p class="contact-intro">I'm always interested in hearing about new projects and opportunities.</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">✉️</span>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:ashrafskmd8@gmail.com" class="contact-value">ashrafskmd8@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <div>
+                                <span class="contact-label">Phone</span>
+                                <a href="tel:7989472314" class="contact-value">7989472314</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Guntur, Andhra Pradesh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/ashraf-7865" target="_blank" class="social-link">
+                            <span class="social-icon">🐙</span>
+                            GitHub
+                        </a>
+                        <a href="https://linkedin.com/in/mohammad-ashraf-shaik-36840a38b" target="_blank" class="social-link">
+                            <span class="social-icon">💼</span>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-decoration"></div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 <span class="brand">Shaik Mohammad Ashraf</span>. All rights reserved.</p>
+            <p class="footer-tagline">Crafted with passion for the future of AI and web technology.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
-
 </body>
-
 </html>
